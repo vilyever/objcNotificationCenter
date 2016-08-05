@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE6406A11D547EE200652BAC /* objcNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6406A01D547EE200652BAC /* objcNotificationCenter.h */; };
+		FE6406A11D547EE200652BAC /* objcNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6406A01D547EE200652BAC /* objcNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE6406A81D547EE200652BAC /* objcNotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE64069D1D547EE200652BAC /* objcNotificationCenter.framework */; };
 		FE6406AD1D547EE200652BAC /* objcNotificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6406AC1D547EE200652BAC /* objcNotificationCenterTests.m */; };
+		FE6406BA1D547F2400652BAC /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FE6406B71D547F2400652BAC /* Cartfile */; };
+		FE6406BB1D547F2400652BAC /* objcNotificationCenter.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FE6406B81D547F2400652BAC /* objcNotificationCenter.podspec */; };
+		FE6406BF1D547F6F00652BAC /* VDNotificationElement.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6406BD1D547F6F00652BAC /* VDNotificationElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6406C01D547F6F00652BAC /* VDNotificationElement.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6406BE1D547F6F00652BAC /* VDNotificationElement.m */; };
+		FE6406C21D54802500652BAC /* objcHook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6406C11D54802500652BAC /* objcHook.framework */; };
+		FE6406C41D54808000652BAC /* objcBlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6406C31D54808000652BAC /* objcBlock.framework */; };
+		FE6406C71D5480B100652BAC /* NSObject+VDNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6406C51D5480B100652BAC /* NSObject+VDNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6406C81D5480B100652BAC /* NSObject+VDNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6406C61D5480B100652BAC /* NSObject+VDNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,15 @@
 		FE6406A71D547EE200652BAC /* objcNotificationCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objcNotificationCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6406AC1D547EE200652BAC /* objcNotificationCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objcNotificationCenterTests.m; sourceTree = "<group>"; };
 		FE6406AE1D547EE200652BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6406B71D547F2400652BAC /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		FE6406B81D547F2400652BAC /* objcNotificationCenter.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objcNotificationCenter.podspec; sourceTree = "<group>"; };
+		FE6406B91D547F2400652BAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FE6406BD1D547F6F00652BAC /* VDNotificationElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDNotificationElement.h; sourceTree = "<group>"; };
+		FE6406BE1D547F6F00652BAC /* VDNotificationElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDNotificationElement.m; sourceTree = "<group>"; };
+		FE6406C11D54802500652BAC /* objcHook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = objcHook.framework; path = Carthage/Build/iOS/objcHook.framework; sourceTree = "<group>"; };
+		FE6406C31D54808000652BAC /* objcBlock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = objcBlock.framework; path = Carthage/Build/iOS/objcBlock.framework; sourceTree = "<group>"; };
+		FE6406C51D5480B100652BAC /* NSObject+VDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDNotification.h"; sourceTree = "<group>"; };
+		FE6406C61D5480B100652BAC /* NSObject+VDNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDNotification.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6406C41D54808000652BAC /* objcBlock.framework in Frameworks */,
+				FE6406C21D54802500652BAC /* objcHook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +72,14 @@
 		FE6406931D547EE200652BAC = {
 			isa = PBXGroup;
 			children = (
+				FE6406C31D54808000652BAC /* objcBlock.framework */,
+				FE6406C11D54802500652BAC /* objcHook.framework */,
 				FE64069F1D547EE200652BAC /* objcNotificationCenter */,
 				FE6406AB1D547EE200652BAC /* objcNotificationCenterTests */,
 				FE64069E1D547EE200652BAC /* Products */,
+				FE6406B71D547F2400652BAC /* Cartfile */,
+				FE6406B81D547F2400652BAC /* objcNotificationCenter.podspec */,
+				FE6406B91D547F2400652BAC /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +97,10 @@
 			children = (
 				FE6406A01D547EE200652BAC /* objcNotificationCenter.h */,
 				FE6406A21D547EE200652BAC /* Info.plist */,
+				FE6406BD1D547F6F00652BAC /* VDNotificationElement.h */,
+				FE6406BE1D547F6F00652BAC /* VDNotificationElement.m */,
+				FE6406C51D5480B100652BAC /* NSObject+VDNotification.h */,
+				FE6406C61D5480B100652BAC /* NSObject+VDNotification.m */,
 			);
 			path = objcNotificationCenter;
 			sourceTree = "<group>";
@@ -93,6 +121,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6406BF1D547F6F00652BAC /* VDNotificationElement.h in Headers */,
+				FE6406C71D5480B100652BAC /* NSObject+VDNotification.h in Headers */,
 				FE6406A11D547EE200652BAC /* objcNotificationCenter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +208,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6406BB1D547F2400652BAC /* objcNotificationCenter.podspec in Resources */,
+				FE6406BA1D547F2400652BAC /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6406C81D5480B100652BAC /* NSObject+VDNotification.m in Sources */,
+				FE6406C01D547F6F00652BAC /* VDNotificationElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +348,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = objcNotificationCenter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -330,6 +368,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = objcNotificationCenter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
