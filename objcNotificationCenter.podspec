@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'objcNotificationCenter/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 
-#  s.dependency 'objcView'
+  s.dependency 'objcHook'
+  s.dependency 'objcBlock'
 
 end
